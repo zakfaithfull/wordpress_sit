@@ -1,0 +1,297 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop. 
+
+******************************************************************/
+.home .wrapper {
+  height: 640px;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+/* MISC 
+
+.slider {
+	max-width: 1040px;
+	max-height: 440px;
+	margin: 0 auto;
+	background: url('../images/compbox_bg.png') repeat;
+	position: relative;
+	padding: 40px;
+}
+
+.slider .thumb {
+	width: 360px;
+	height: 360px;
+	float: left;
+}
+
+.slider .description {
+	width: 520px;
+	float: right;
+}
+
+.slider .description h2 {
+	margin: 70px 0;
+}
+
+.slider img.arrowleft {
+	position: absolute;
+	top: 195px;
+	left:-115px;
+}
+
+.slider img.arrowright {
+	position:absolute;
+	top: 195px;
+	right: -115px !important;
+} */
+/* TYPOGRAPHY */
+h2 {
+  text-transform: uppercase;
+}
+/* BUTTONS */
+/* BODY */
+.fourcol img {
+  float: right;
+}
+p.back-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0;
+  line-height: 1;
+  position: absolute;
+  top: -23px;
+  left: 0px;
+  z-index: 999;
+}
+p.back-button a {
+  text-decoration: none;
+}
+/* HEADER */
+header {
+  height: 60px;
+  z-index: 999;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  overflow: visible;
+}
+header h1 {
+  font-size: 58px;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+header .logo {
+  padding: 10px 40px;
+  background-color: #477c92;
+  display: inline-block;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-box-shadow: 2px 2px 3px #444;
+  -webkit-box-shadow: 2px 2px 3px #444;
+  box-shadow: 2px 2px 3px #444;
+}
+/* CONTENT */
+.home #content {
+  max-height: 640px;
+  padding: 200px 0;
+  margin: 0;
+}
+.single #content {
+  background: #2f657b;
+  margin: -160px 0 0 0;
+  padding: 360px 40px 60px 40px;
+  position: relative;
+  overflow: visible;
+}
+.single #content h2 {
+  margin: 0;
+}
+.single #content .fourcol.image {
+  padding-top: 25px;
+}
+img.wp-post-image {
+  position: relative;
+}
+/* INTRODUCTION */
+#introduction img {
+  -moz-box-shadow: 0 0 10px #115673;
+  -webkit-box-shadow: 0 0 10px #115673;
+  box-shadow: 0 0 10px #115673;
+}
+/* FORM */
+.gform_wrapper {
+  clear: both;
+  margin-top: 100px;
+  width: 1280px;
+  padding: 40px;
+  margin-left: -40px;
+  background: #457a90 !important;
+}
+.validation_error {
+  font-size: 18px;
+  display: block;
+  background: #2f657b;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  -webkit-animation: fadein ease-in 1s;
+  -moz-animation: fadein ease-in 1s;
+  -o-animation: fadein ease-in 1s;
+  animation: fadein ease-in 1s;
+}
+section#form {
+  display: none;
+  max-height: 500px;
+}
+ul#gform_fields_1 {
+  margin: 0 !important;
+  padding: !important;
+}
+input[type="text"] {
+  width: 250px;
+  margin-left: 0;
+  padding: 7px 5px;
+  background-color: #FFF;
+  color: #115673;
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  border: none;
+  min-height: 40px;
+  max-height: 40px;
+  font-family: "myriad-pro-condensed", sans-serif;
+}
+.terms {
+  padding: 100px 0;
+}
+.terms h4 {
+  margin-top: 0;
+}
+.terms p {
+  margin-bottom: 0;
+}
+.gform_body {
+  float: none;
+}
+ul.gfield_radio {
+  margin: 20px 0;
+}
+li.question {
+  max-width: 50%;
+}
+.gform_body li h3 {
+  margin: 0 !important;
+  line-height: 1 !important;
+}
+li.answers {
+  clear: left;
+  max-width: 50%;
+}
+li.form_title,
+li.first_name,
+li.last_name,
+li.email,
+li.phone {
+  position: absolute;
+}
+li.first_name,
+li.last_name,
+li.email,
+li.phone {
+  max-height: 40px;
+}
+li.form_title {
+  right: 333px;
+  top: 0px;
+}
+li.first_name {
+  right: 260px;
+  top: 56px;
+}
+li.last_name {
+  right: 0px;
+  top: 56px;
+}
+li.email {
+  right: 260px;
+  top: 106px;
+}
+li.phone {
+  right: 0px;
+  top: 106px;
+}
+.gform_footer {
+  position: relative;
+}
+/*.gform_footer input[type="submit"] {
+	position: absolute;
+	right: 0;
+	top: 330px;
+}*/
+.gform_footer input[type="submit"] {
+  float: none;
+}
+.gform_body .terms {
+  margin-top: 100px;
+}
+#gforms_confirmation_message {
+  width: 100%;
+  clear: both;
+  font-size: 24px;
+  padding-top: 100px;
+}
+li.email.gfield_error,
+li.phone.gfield_error {
+  top: 146px;
+}
+/* QUESTION BUTTONS */
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+.clearleft {
+  clear: left;
+}
+.fps-slides-container {
+  width: 800px !important;
+  max-width: 800px !important;
+  margin: 0 auto;
+  -moz-box-shadow: 2px 2px 3px #444;
+  -webkit-box-shadow: 2px 2px 3px #444;
+  box-shadow: 2px 2px 3px #444;
+}
+.fps-slide {
+  background: url('../images/blue_bg.png') repeat;
+  padding: 40px;
+  width: 800px !important;
+  max-width: 800px !important;
+}
+.slides_control {
+  overflow: hidden;
+  max-height: 380px !important;
+}
+/* a.fps-prev{
+	left: 5px !important;
+	background: url('../images/fps-prev.png');
+}
+a.fps-next{
+	right: 5px !important;
+	background: url('../images/fps-next.png');
+} */
+footer .responsive-container {
+  padding: 0;
+}

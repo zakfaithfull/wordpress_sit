@@ -1,0 +1,4 @@
+DB: thinkpu_nts
+
+U: thinkpu_admin
+P: SiT_think13

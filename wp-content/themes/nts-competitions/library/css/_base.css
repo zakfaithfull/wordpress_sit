@@ -1,0 +1,940 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+------------ MAP ------------
+
+01. GENERAL STYLES
+02. WORDPRESS BODY CLASSES
+03. LAYOUT & GRID STYLES
+04. LINK STYLES
+05. H1, H2, H3, H4, H5 STYLES
+06. HEADER STYLES
+07. NAVIGATION STYLES
+08. POSTS & CONTENT STYLES
+09. PAGE NAVI STYLES
+10. COMMENT STYLES
+11. COMMENT FORM STYLES
+12. SIDEBARS & ASIDES
+13. FOOTER STYLES
+
+******************************************************************/
+/*********************
+01. GENERAL STYLES
+*********************/
+header,
+footer,
+p.back-button {
+  opacity: 0;
+  -webkit-animation: fadein ease-in 1s;
+  -moz-animation: fadein ease-in 1s;
+  -o-animation: fadein ease-in 1s;
+  animation: fadein ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+img.typekit-badge {
+  display: none !important;
+}
+html,
+body {
+  /* height: 100%; */
+
+}
+html body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #FFF;
+  line-height: 1.5;
+  font-family: "myriad-pro-condensed", sans-serif;
+  font-weight: 300;
+}
+.myatu_bgm_fs {
+  background: #000;
+}
+.responsive-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 0 !important;
+}
+#top_button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+header {
+  height: auto;
+  background: #183440;
+  z-index: 999;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+header h1 {
+  font-size: 58px;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px #444;
+}
+header .logo {
+  max-width: 100%;
+  padding: 10px 40px;
+  background-color: #477c92;
+  display: inline-block;
+  -moz-box-shadow: 2px 2px 3px #444;
+  -webkit-box-shadow: 2px 2px 3px #444;
+  box-shadow: 2px 2px 3px #444;
+  opacity: 0;
+  -webkit-animation: fadein ease-in 1s;
+  -moz-animation: fadein ease-in 1s;
+  -o-animation: fadein ease-in 1s;
+  animation: fadein ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+header .logo img.logoimg {
+  max-width: 100%;
+}
+#content {
+  padding-bottom: 100px;
+  opacity: 0;
+  -webkit-animation: fadein ease-in 1s;
+  -moz-animation: fadein ease-in 1s;
+  -o-animation: fadein ease-in 1s;
+  animation: fadein ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.single #content {
+  background: url('../images/blue_bg.png') repeat;
+  padding: 115px 20px 100px 20px;
+  position: relative;
+  margin-top: -115px;
+}
+.single #content .fourcol img {
+  width: 100%;
+  height: auto;
+}
+/********************
+02. WORDPRESS BODY CLASSES
+    style a page via class
+********************/
+/* for sites that are read right to left (i.e. hebrew) */
+/* home page */
+/* blog template page */
+/* archive page */
+/* date archive page */
+/* replace the number to the corresponding page number */
+/* search page */
+/* search result page */
+/* no results search page */
+/* individual paged search (i.e. body.search-paged-3) */
+/* 404 page */
+/* single post page */
+/* individual post page by id (i.e. body.postid-73) */
+/* individual paged single (i.e. body.single-paged-3) */
+/* attatchment page */
+/* individual attatchment page (i.e. body.attachmentid-763) */
+/* style mime type pages */
+/* author page */
+/* user nicename (i.e. body.author-samueladams) */
+/* paged author archives (i.e. body.author-paged-4) for page 4 */
+/* category page */
+/* individual category page (i.e. body.category-6) */
+/* replace the number to the corresponding page number */
+/* tag page */
+/* individual tag page (i.e. body.tag-news) */
+/* replace the number to the corresponding page number */
+/* custom page template page */
+/* individual page template (i.e. body.page-template-contact-php */
+/* replace the number to the corresponding page number */
+/* parent page template */
+/* child page template */
+/* replace the number to the corresponding page number */
+/* if user is logged in */
+/* paged items like search results or archives */
+/* individual paged (i.e. body.paged-3) */
+/*********************
+03. LAYOUT & GRID STYLES
+*********************/
+.responsive-container {
+  min-height: 100%;
+}
+#content.no-top-margin {
+  margin-top: 0;
+}
+/*********************
+04. LINK STYLES
+*********************/
+a {
+  color: #FFF;
+  text-decoration: underline;
+}
+a.button,
+input[type="submit"] {
+  background-color: #477c91;
+  float: left;
+  display: block;
+  padding: 5px 40px;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+  clear: both;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  border: none;
+  font-weight: 300;
+  cursor: pointer;
+  font-family: "myriad-pro-condensed", sans-serif;
+}
+input[type="submit"]:hover,
+a.button:hover {
+  background-color: #5598b4;
+}
+a.button.enter {
+  clear: none;
+}
+p.back-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0;
+  line-height: 1;
+  margin: 40px auto 20px;
+  z-index: 999 !important;
+  width: 280px;
+}
+p.back-button a {
+  text-decoration: none;
+}
+p.back-button a.button {
+  margin-top: 0;
+  float: none;
+}
+form {
+  font-size: 18px;
+}
+input[type="submit"] {
+  background-color: #bd692e;
+  margin-top: 0;
+  float: right;
+  clear: right;
+}
+/******************************************************************
+05. H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+h1 {
+  font-size: 120px;
+}
+h1.competitions-banner {
+  color: #FFF;
+  text-align: center;
+  margin: 0 0 50px 0;
+  text-transform: uppercase;
+  font-stretch: condensed;
+  background: url('../images/arrow.png') no-repeat bottom center;
+  padding-bottom: 20px;
+}
+h2 {
+  font-size: 48px;
+  margin: 0 0 20px 0;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+h4 {
+  font-size: 28px;
+  margin-bottom: 0 !important;
+}
+p {
+  font-size: 25px;
+  font-weight: 300;
+}
+small {
+  font-size: 20px;
+}
+/*********************
+06. HEADER STYLES
+*********************/
+/*********************
+07. NAVIGATION STYLES
+*********************/
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+ul#tabs {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  /* end .menu li */
+
+  /* highlight current page */
+
+  /* end current highlighters */
+
+}
+.nav li {
+  /*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/
+
+}
+.nav li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 10px;
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  /*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/
+
+}
+.nav li ul.sub-menu li a,
+.nav li ul.children li a {
+  padding-left: 30px;
+}
+/* end .nav */
+/*********************
+08. POSTS & CONTENT STYLES
+*********************/
+#content {
+  margin-top: 2.2em;
+}
+/* end .hentry */
+/* want to style individual post classes? Booya! */
+/* post by id (i.e. post-3) */
+/* general post style */
+/* general article on a page style */
+/* general style on an attatchment */
+/* sticky post style */
+/* hentry class */
+/* style by category (i.e. category-videos) */
+/* style by tag (i.e. tag-news) */
+/* post meta */
+.byline {
+  color: #999;
+}
+/* entry content */
+.entry-content {
+  /*
+			image alignment on a screen this size may be
+			a bit difficult. It's set to start aligning
+			and floating images at the next breakpoint,
+			but it's up to you. Feel free to change it up.
+			*/
+
+}
+.entry-content dd {
+  margin-left: 0;
+  font-size: 0.9em;
+  color: #787878;
+  margin-bottom: 1.5em;
+}
+.entry-content img {
+  margin: 0 0 1.5em 0;
+  max-width: 100%;
+  height: auto;
+}
+.entry-content video,
+.entry-content object {
+  max-width: 100%;
+  height: auto;
+}
+.entry-content pre {
+  background: #eee;
+  border: 1px solid #cecece;
+  padding: 10px;
+}
+/* end .entry-content */
+.wp-caption {
+  max-width: 100%;
+  background: #eee;
+  padding: 5px;
+  /* images inside wp-caption */
+
+}
+.wp-caption img {
+  max-width: 100%;
+  margin-bottom: 0;
+  width: 100%;
+}
+.wp-caption p.wp-caption-text {
+  font-size: 0.85em;
+  margin: 4px 0 7px;
+  text-align: center;
+}
+/* end .wp-caption */
+/* image gallery styles */
+/* end .gallery */
+/* gallery caption styles */
+/******************************************************************
+09. PAGE NAVI STYLES
+******************************************************************/
+.page-navigation,
+.wp-prev-next {
+  margin: 1.1em 0 2.2em;
+}
+.bones_page_navi {
+  /* current page link */
+
+  /* end .bones_page_navi .bpn-current */
+
+  /* common styles for page-navi links */
+
+  /* remove the bg on end links */
+
+  /* previous link */
+
+  /* next page link */
+
+  /* first page link */
+
+  /* last page link */
+
+}
+.bones_page_navi li {
+  float: left;
+  margin-left: 10px;
+}
+.bones_page_navi li a {
+  padding: 3px 6px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+.bones_page_navi li a:hover,
+.bones_page_navi li a:focus {
+  color: #f01d4f;
+  text-decoration: underline;
+}
+.bones_page_navi li.bpn-current {
+  padding: 3px 6px;
+  border-bottom: 2px solid #f01d4f;
+  position: relative;
+}
+.bones_page_navi li.bpn-current a {
+  /* hovering on current page link */
+
+}
+.bones_page_navi li.bpn-prev-link,
+.bones_page_navi li.bpn-next-link {
+  font-weight: 700;
+}
+.bones_page_navi li.bpn-prev-link a,
+.bones_page_navi li.bpn-next-link a {
+  padding: 0;
+}
+.bones_page_navi li.bpn-prev-link a:hover,
+.bones_page_navi li.bpn-next-link a:hover,
+.bones_page_navi li.bpn-first-page-link a:hover,
+.bones_page_navi li.bpn-last-page-link a:hover {
+  background: none;
+}
+/* end .bones_page_navi */
+/* fallback previous & next links */
+.wp-prev-next .prev-link {
+  float: left;
+}
+.wp-prev-next .next-link {
+  float: right;
+}
+/* end .wp-prev-next */
+/******************************************************************
+10. COMMENT STYLES
+******************************************************************/
+/* h3 comment title */
+#comments {
+  /* number of comments span */
+
+}
+.commentlist {
+  /* general comment classes */
+
+  /* vcard */
+
+  /* end .commentlist .vcard */
+
+  /* comment meta */
+
+  /* comment content */
+
+  /* end .commentlist .comment_content */
+
+  /* comment reply link */
+
+  /* end .commentlist .comment-reply-link */
+
+}
+.commentlist li {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  list-style-type: none;
+  margin-bottom: 1.5em;
+  padding: 0.7335em 10px;
+  /* end .commentlist li ul.children */
+
+}
+.commentlist li:last-child {
+  margin-bottom: 0;
+}
+.commentlist li ul.children {
+  margin: 0;
+  /* variations */
+
+  /* change number for different depth */
+
+}
+.commentlist li[class*=depth-] {
+  margin-top: 1.1em;
+}
+.commentlist li.depth-1 {
+  margin-left: 0;
+  margin-top: 0;
+}
+.commentlist li:not(.depth-1) {
+  margin-right: -10px;
+  margin-left: -10px;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+.commentlist .odd {
+  background: #eee;
+}
+.commentlist .even {
+  background: #fefefe;
+}
+.commentlist .vcard {
+  margin-left: 50px;
+}
+.commentlist .vcard cite.fn {
+  font-weight: 700;
+  font-style: normal;
+}
+.commentlist .vcard time {
+  float: right;
+}
+.commentlist .vcard time a {
+  color: #999;
+  text-decoration: none;
+}
+.commentlist .vcard time a:hover {
+  text-decoration: underline;
+}
+.commentlist .vcard img.avatar {
+  position: absolute;
+  left: 10px;
+  padding: 2px;
+  border: 1px solid #cecece;
+  background: #fff;
+}
+.commentlist .comment_content {
+  margin-left: 50px;
+}
+.commentlist .comment_content p {
+  margin: 0.7335em 0 1.5em;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.commentlist .comment-reply-link {
+  text-decoration: none;
+  float: right;
+  background: #4598bb;
+  padding: 3px 5px;
+  color: #fff;
+  opacity: 0.65;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+.commentlist .comment-reply-link:hover,
+.commentlist .comment-reply-link:focus {
+  opacity: 1;
+}
+/* end .commentlist */
+/******************************************************************
+11. COMMENT FORM STYLES
+******************************************************************/
+.respond-form {
+  margin: 1.5em 10px;
+  padding-bottom: 2.2em;
+}
+.respond-form form {
+  margin: 0.75em 0;
+}
+.respond-form form li {
+  list-style-type: none;
+  clear: both;
+  margin-bottom: 0.7335em;
+}
+.respond-form form li label,
+.respond-form form li small {
+  display: none;
+}
+.respond-form form input[type=text],
+.respond-form form input[type=email],
+.respond-form form input[type=url],
+.respond-form form textarea {
+  padding: 3px 6px;
+  background: #efefef;
+  border: 2px solid #cecece;
+  line-height: 1.5em;
+  /* form validation */
+
+}
+.respond-form form input[type=text]:focus,
+.respond-form form input[type=email]:focus,
+.respond-form form input[type=url]:focus,
+.respond-form form textarea:focus {
+  background: #fff;
+}
+.respond-form form input[type=text]:invalid,
+.respond-form form input[type=email]:invalid,
+.respond-form form input[type=url]:invalid,
+.respond-form form textarea:invalid {
+  outline: none;
+  border-color: #fbc2c4;
+  background-color: #f6e7eb;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+.respond-form form input[type=text],
+.respond-form form input[type=email],
+.respond-form form input[type=url] {
+  max-width: 400px;
+  min-width: 250px;
+}
+.respond-form form textarea {
+  resize: none;
+  width: 97.3%;
+  height: 150px;
+}
+/* comment submit button */
+/* comment form title */
+#comment-form-title {
+  margin: 0 0 1.1em;
+}
+/* cancel comment reply link */
+/* logged in comments */
+/* allowed tags */
+#allowed_tags {
+  margin: 1.5em 10px 0.7335em 0;
+}
+/* no comments */
+.nocomments {
+  margin: 0 20px 1.1em;
+}
+/*********************
+12. SIDEBARS & ASIDES
+*********************/
+.widget ul li {
+  /* deep nesting */
+
+}
+/*********************
+13. FOOTER STYLES
+*********************/
+.footer {
+  clear: both;
+}
+.footer p {
+  font-size: 16px;
+}
+/*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+/* end .footer-links */
+/* FOOTER */
+footer {
+  width: 100%;
+  background: #183440;
+  z-index: 999;
+}
+footer p.last {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+.copyright,
+.credit {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+.website-terms {
+  width: 100%;
+  clear: both;
+  padding: 20px 0;
+}
+/* FORM */
+input[type=radio] {
+  display: none;
+}
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+input[type=radio]:checked + label {
+  background-color: #2f657b;
+  background-image: url('../images/tick.png') no-repeat 0 0;
+}
+input[type=radio] + label {
+  display: block;
+  width: 250px;
+  clear: both;
+  text-align: center;
+  background-color: #2f657b;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  padding: 7px 0;
+}
+input[type=radio].first + label {
+  margin-left: 0;
+}
+.gform_wrapper {
+  display: block;
+  padding: 0;
+  clear: both;
+}
+.gform_wrapper .gfield_radio li {
+  width: 250px;
+  display: block;
+  clear: both;
+  text-align: center;
+  background-color: #2f657b;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.gform_wrapper .gfield_checkbox li {
+  display: block;
+  clear: both;
+  text-align: left;
+  background-color: transparent;
+  color: #FFF;
+  border: none;
+  margin-bottom: 10px;
+}
+.gform_wrapper .gfield_checkbox li label {
+  margin-left: 10px !important;
+}
+.gform_wrapper .gfield_checkbox li:first-child,
+.gform_wrapper .gfield_radio li:first-child {
+  margin-left: 0;
+}
+.gform_wrapper .gfield_checkbox li label,
+.gform_wrapper .gfield_radio li label {
+  width: 100%;
+  margin: 0;
+}
+span.gfield_required {
+  display: none;
+}
+.gform_body {
+  position: relative;
+  float: left;
+  margin-left: 0;
+  padding: 0;
+}
+input[type="text"] {
+  width: 250px;
+  margin-left: 0;
+  padding: 7px 5px;
+  background-color: #FFF;
+  color: #115673;
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  border: none;
+  min-height: 40px;
+  max-height: 40px;
+  font-family: "myriad-pro-condensed", sans-serif;
+}
+input[type="submit"] {
+  float: left;
+  clear: both;
+}
+.validation_message {
+  margin-bottom: 10px;
+  position: relative;
+  top: -5px;
+}
+.validation_error {
+  font-size: 18px;
+  display: block;
+  background: url('../images/blue_bg.png');
+  padding: 10px 20px;
+}
+.fps-slide h2 {
+  line-height: 1.5 !important;
+}
+.fps-slide h2 a {
+  text-decoration: none;
+}
+.fps-pagination li {
+  margin: 0 2px !important;
+}
+.fps-pagination li a {
+  display: block;
+  width: 15px !important;
+  height: 0;
+  padding-top: 15px !important;
+  background-image: url(../images/fps-pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+  opacity: 0.8;
+}
+.fps-pagination li.current a {
+  background-position: 0 -15px !important;
+}
+.fps-slides-container {
+  width: 320px !important;
+  max-width: 320px !important;
+  margin: 0 auto;
+  -moz-box-shadow: 2px 2px 3px #444;
+  -webkit-box-shadow: 2px 2px 3px #444;
+  box-shadow: 2px 2px 3px #444;
+}
+.fps-slide {
+  background: url('../images/blue_bg.png') repeat;
+  padding: 40px;
+  width: 320px !important;
+  max-width: 320px !important;
+}
+.slides_control {
+  max-height: 455px;
+}
+.fps-slide .fps-thumb {
+  width: 200px;
+  margin: 0 auto;
+  float: none;
+}
+.fps-slide .fps-thumb img {
+  width: 200px !important;
+  height: 200px !important;
+}
+.fps-slide h2.entry-title {
+  clear: both;
+  text-align: center;
+  font-size: 36px;
+}
+.fps-slide p {
+  clear: both;
+  text-align: center;
+  display: none;
+}
+.fps-slides-container a.button.enter {
+  margin: 0 auto;
+  float: none;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

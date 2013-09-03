@@ -1,0 +1,21 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# Do not display PHP error messages
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors off
+
+#order deny,allow
+#deny from all
+#allow from 178.22.161.30

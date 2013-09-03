@@ -1,0 +1,146 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to 
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection. 
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.less styles.
+
+******************************************************************/
+header h1 {
+  font-size: 58px;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+.single #content {
+  background: url('../images/blue_bg.png') repeat;
+  margin-top: -160px;
+  padding: 160px 20px 100px 20px;
+  position: relative;
+}
+p.back-button {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0;
+  line-height: 1;
+  margin: 40px auto 20px;
+  z-index: 999;
+  width: 280px;
+}
+/*********************
+NAVIGATION STYLES
+*********************/
+/* .menu is clearfixed inside mixins.scss */
+.menu {
+  /* end .menu ul */
+
+}
+.menu ul {
+  /* end .menu ul li */
+
+  /* highlight current page */
+
+  /* end current highlighters */
+
+}
+.menu ul li {
+  /*
+				plan your menus and drop-downs wisely.
+				*/
+
+}
+.menu ul li a {
+  /*
+					you can use hover styles here even though this size
+					has the possibility of being a mobile device.
+					*/
+
+}
+/* end .menu */
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+/* entry content */
+.entry-content {
+  /* at this larger size, we can start to align images */
+
+}
+.entry-content .alignleft,
+.entry-content img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+}
+.entry-content .alignright,
+.entry-content img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+}
+.entry-content .aligncenter,
+.entry-content img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+}
+/* end .entry-content */
+/*********************
+FOOTER STYLES
+*********************/
+/*
+check your menus here. do they look good?
+do they need tweaking?
+*/
+footer {
+  position: fixed;
+  bottom: 0;
+}
+/* end .footer-links */
+.fps-slides-container {
+  width: 481px !important;
+  max-width: 481px !important;
+  margin: 0 auto;
+  -moz-box-shadow: 2px 2px 3px #444;
+  -webkit-box-shadow: 2px 2px 3px #444;
+  box-shadow: 2px 2px 3px #444;
+}
+.fps-slide {
+  background: url('../images/blue_bg.png') repeat;
+  padding: 40px;
+  width: 481px !important;
+  max-width: 481px !important;
+}
+.slides_control {
+  max-height: 647px;
+}
+.fps-slide .fps-thumb {
+  width: 300px;
+  margin: 0 auto;
+  float: none;
+}
+.fps-slide .fps-thumb img {
+  width: 300px !important;
+  height: 300px !important;
+}
+.fps-slide h2.entry-title {
+  clear: both;
+  text-align: center;
+}
+.fps-slide p {
+  clear: both;
+  text-align: center;
+  display: block;
+}
+.fps-slides-container a.button.enter {
+  margin: 0 auto;
+  float: none;
+}

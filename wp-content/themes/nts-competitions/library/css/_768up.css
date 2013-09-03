@@ -1,0 +1,210 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+/*********************
+GENERAL STYLES
+*********************/
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+.wrap {
+  max-width: 1140px;
+}
+/*********************
+HEADER STYLES
+*********************/
+/*********************
+NAVIGATION STYLES
+*********************/
+.nav {
+  background: #eee;
+  border: 0;
+  /* end .menu ul li */
+
+  /* highlight current page */
+
+  /* end current highlighters */
+
+}
+.nav li {
+  float: left;
+  position: relative;
+  /*
+		plan your menus and drop-downs wisely.
+		*/
+
+  /* showing sub-menus */
+
+}
+.nav li a {
+  border-bottom: 0;
+  /*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+
+}
+.nav li a:hover,
+.nav li a:focus {
+  background-color: #dedede;
+}
+.nav li ul.sub-menu,
+.nav li ul.children {
+  margin-top: 0;
+  border: 1px solid #ccc;
+  border-top: 0;
+  position: absolute;
+  display: none;
+  z-index: 8999;
+  /* highlight sub-menu current page */
+
+}
+.nav li ul.sub-menu li,
+.nav li ul.children li {
+  /*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+
+}
+.nav li ul.sub-menu li a,
+.nav li ul.children li a {
+  padding-left: 10px;
+  border-right: 0;
+  display: block;
+  width: 180px;
+  border-bottom: 1px solid #ccc;
+}
+.nav li ul.sub-menu li:last-child a,
+.nav li ul.children li:last-child a {
+  border-bottom: 0;
+}
+.nav li:hover ul {
+  top: auto;
+  display: block;
+}
+/* end .nav */
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.sidebar {
+  margin-top: 2.2em;
+}
+.widgettitle {
+  border-bottom: 2px solid #444;
+  margin-bottom: 0.75em;
+}
+.widget {
+  padding: 0 10px;
+  margin: 2.2em 0;
+}
+.widget ul li {
+  margin-bottom: 0.75em;
+  /* deep nesting */
+
+}
+.widget ul li ul {
+  margin-top: 0.75em;
+  padding-left: 1em;
+}
+/* links widget */
+/* meta widget */
+/* pages widget */
+/* recent-posts widget */
+/* archives widget */
+/* tag-cloud widget */
+/* calendar widget */
+/* category widget */
+/* recent-comments widget */
+/* search widget */
+/* text widget */
+/*********************
+FOOTER STYLES
+*********************/
+footer .responsive-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+footer p.last {
+  width: auto;
+  max-width: 50%;
+  float: right;
+  text-align: right;
+}
+.copyright,
+.credit {
+  width: auto;
+  max-width: 50%;
+  float: left;
+}
+.fps-slides-container {
+  width: 768px !important;
+  max-width: 768px !important;
+  margin: 0 auto;
+  -moz-box-shadow: 2px 2px 3px #444;
+  -webkit-box-shadow: 2px 2px 3px #444;
+  box-shadow: 2px 2px 3px #444;
+}
+.fps-slide {
+  background: url('../images/blue_bg.png') repeat;
+  padding: 20px;
+  width: 768px !important;
+  max-width: 768px !important;
+}
+.slides_control {
+  overflow: hidden;
+  max-height: 340px !important;
+}
+.fps-slide h2 {
+  line-height: 1.5 !important;
+}
+.fps-slide h2 a {
+  text-decoration: none;
+}
+.fps-pagination li {
+  margin: 0 2px !important;
+}
+.fps-pagination li a {
+  display: block;
+  width: 15px !important;
+  height: 0;
+  padding-top: 15px !important;
+  background-image: url(../images/fps-pagination.png);
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+  opacity: 0.8;
+}
+.fps-pagination li.current a {
+  background-position: 0 -15px !important;
+}
+.fps-slide .fps-thumb {
+  width: 300px;
+  margin: 0 20px 0 0;
+  float: left;
+}
+.fps-slide h2.entry-title {
+  clear: none;
+  text-align: inherit;
+  font-size: 42px;
+}
+.fps-slide p {
+  clear: none;
+  text-align: inherit;
+}
+.fps-slides-container a.button.enter {
+  float: left;
+}
